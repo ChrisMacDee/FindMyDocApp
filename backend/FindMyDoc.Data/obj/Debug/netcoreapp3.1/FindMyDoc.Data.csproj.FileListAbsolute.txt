@@ -1,0 +1,12 @@
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\bin\Debug\netcoreapp3.1\FindMyDoc.Data.deps.json
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\bin\Debug\netcoreapp3.1\FindMyDoc.Data.runtimeconfig.json
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\bin\Debug\netcoreapp3.1\FindMyDoc.Data.runtimeconfig.dev.json
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\bin\Debug\netcoreapp3.1\FindMyDoc.Data.dll
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\bin\Debug\netcoreapp3.1\FindMyDoc.Data.pdb
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.AssemblyInfoInputs.cache
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.AssemblyInfo.cs
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.csproj.CoreCompileInputs.cache
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.dll
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.pdb
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.genruntimeconfig.cache
+C:\Users\Chris Work\source\repos\FindMyDoc\FindMyDoc.Data\obj\Debug\netcoreapp3.1\FindMyDoc.Data.csprojAssemblyReference.cache
