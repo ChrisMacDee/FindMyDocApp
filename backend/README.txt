@@ -1,3 +1,8 @@
+.Net Core Web Api that allows the user to retrieve bookings (as well as post some) and retrieve doctor entries.
+
+You can view and test the api endpoints using the swagger interface. Just go to https://localhost:44308/swagger.
+
+
 Setup instructions
 -------------------
 Using Sql Management Studio or similar, create a sysadmin user on your local database:
@@ -22,4 +27,4 @@ In the appsettings.json, ensure that the connection string matches your local sq
 }
 -----------------------------------------------------------------
 
-Build solution. Run IIS Express and it should start up on localhost:3000. Leave it running for front end to connect to.
+Build solution. Run IIS Express and it should start up on https://localhost:44308. Leave it running for front end to connect to.
