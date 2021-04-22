@@ -11,7 +11,9 @@ namespace FindMyDoc.Data.Models
         public Guid Id { get; set; }
         [Required]
         public DateTime BookingDateAndTime { get; set; }
+        [ForeignKey(nameof(Doctor))]
         public Guid DoctorId { get; set; }
+        [ForeignKey(nameof(Applicant))]
         public Guid ApplicantId { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime LastUpdated { get; set; }

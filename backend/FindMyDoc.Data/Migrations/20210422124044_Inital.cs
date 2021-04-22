@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FindMyDoc.Data.Migrations
 {
-    public partial class Initialsetup : Migration
+    public partial class Inital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Applicants",
+                name: "BookingApplicants",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -22,7 +22,7 @@ namespace FindMyDoc.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Applicants", x => x.Id);
+                    table.PrimaryKey("PK_BookingApplicants", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -58,9 +58,9 @@ namespace FindMyDoc.Data.Migrations
                 {
                     table.PrimaryKey("PK_Bookings", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Bookings_Applicants_ApplicantId",
+                        name: "FK_Bookings_BookingApplicants_ApplicantId",
                         column: x => x.ApplicantId,
-                        principalTable: "Applicants",
+                        principalTable: "BookingApplicants",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -88,7 +88,7 @@ namespace FindMyDoc.Data.Migrations
                 name: "Bookings");
 
             migrationBuilder.DropTable(
-                name: "Applicants");
+                name: "BookingApplicants");
 
             migrationBuilder.DropTable(
                 name: "Doctors");

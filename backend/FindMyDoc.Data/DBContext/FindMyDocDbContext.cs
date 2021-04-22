@@ -1,4 +1,5 @@
-﻿using FindMyDoc.Data.Models;
+﻿using FindMyDoc.Data.Configuration;
+using FindMyDoc.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,12 +16,13 @@ namespace FindMyDoc.Data.DBContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
-            // TODO: Add seeding option to config
+            modelBuilder.ApplyConfiguration(new DoctorConfiguration());  
+            modelBuilder.ApplyConfiguration(new BookingApplicantConfiguration());
+            modelBuilder.ApplyConfiguration(new BookingConfiguration());
         }
 
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Booking> Bookings { get; set; }
-        public DbSet<BookingApplicant> Applicants { get; set; }
+        public DbSet<BookingApplicant> BookingApplicants { get; set; }
     }
 }

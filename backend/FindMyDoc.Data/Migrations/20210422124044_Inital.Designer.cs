@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FindMyDoc.Data.Migrations
 {
     [DbContext(typeof(FindMyDocDbContext))]
-    [Migration("20210314193828_Initial setup")]
-    partial class Initialsetup
+    [Migration("20210422124044_Inital")]
+    partial class Inital
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -86,7 +86,7 @@ namespace FindMyDoc.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Applicants");
+                    b.ToTable("BookingApplicants");
                 });
 
             modelBuilder.Entity("FindMyDoc.Data.Models.Doctor", b =>

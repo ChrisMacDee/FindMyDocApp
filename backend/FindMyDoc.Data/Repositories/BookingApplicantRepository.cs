@@ -26,12 +26,12 @@ namespace FindMyDoc.Data.Repositories
 
         public BookingApplicant Get(Guid id)
         {
-            return _context.Applicants.FirstOrDefault(n => n.Id == id);
+            return _context.BookingApplicants.FirstOrDefault(n => n.Id == id);
         }
 
         public IEnumerable<BookingApplicant> GetAll()
         {
-            return _context.Applicants.ToList();
+            return _context.BookingApplicants.ToList();
         }
 
         public void Update(BookingApplicant entity)
@@ -56,7 +56,7 @@ namespace FindMyDoc.Data.Repositories
             {
                 return null;
             }
-            return _context.Applicants.FirstOrDefault(n => n.Email.Equals(email.Trim())); ;
+            return _context.BookingApplicants.FirstOrDefault(n => n.Email.Equals(email.Trim())); ;
         }
     }
 }

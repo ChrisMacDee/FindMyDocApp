@@ -4,14 +4,16 @@ using FindMyDoc.Data.DBContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FindMyDoc.Data.Migrations
 {
     [DbContext(typeof(FindMyDocDbContext))]
-    partial class FindMyDocDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210422125612_added-seed-data")]
+    partial class addedseeddata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,18 +52,6 @@ namespace FindMyDoc.Data.Migrations
                     b.HasIndex("DoctorId");
 
                     b.ToTable("Bookings");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("279d8e19-48b6-44c6-9117-f2619041ce73"),
-                            ApplicantId = new Guid("33b61872-8744-427f-8eed-967878a97b99"),
-                            BookingDateAndTime = new DateTime(2021, 4, 22, 14, 2, 32, 890, DateTimeKind.Local).AddTicks(80),
-                            DateCreated = new DateTime(2021, 4, 22, 14, 2, 32, 889, DateTimeKind.Local).AddTicks(8890),
-                            Deleted = false,
-                            DoctorId = new Guid("33b61872-8744-427f-8eed-967878a97b98"),
-                            LastUpdated = new DateTime(2021, 4, 22, 14, 2, 32, 889, DateTimeKind.Local).AddTicks(9469)
-                        });
                 });
 
             modelBuilder.Entity("FindMyDoc.Data.Models.BookingApplicant", b =>
@@ -97,19 +87,6 @@ namespace FindMyDoc.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BookingApplicants");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("33b61872-8744-427f-8eed-967878a97b99"),
-                            DateCreated = new DateTime(2021, 4, 22, 14, 2, 32, 889, DateTimeKind.Local).AddTicks(870),
-                            Deleted = false,
-                            Email = "fakeemail@test.com",
-                            EmailLastSent = new DateTime(2021, 4, 22, 14, 2, 32, 889, DateTimeKind.Local).AddTicks(2576),
-                            FullName = "Joe Bloggs",
-                            LastUpdated = new DateTime(2021, 4, 22, 14, 2, 32, 889, DateTimeKind.Local).AddTicks(1461),
-                            NHSNumber = "1234"
-                        });
                 });
 
             modelBuilder.Entity("FindMyDoc.Data.Models.Doctor", b =>
@@ -147,12 +124,12 @@ namespace FindMyDoc.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("33b61872-8744-427f-8eed-967878a97b98"),
+                            Id = new Guid("e8442dce-e31e-4dd8-a85c-db5f5bb1ba23"),
                             Address = "123 Fake Street",
-                            DateCreated = new DateTime(2021, 4, 22, 14, 2, 32, 883, DateTimeKind.Local).AddTicks(1806),
+                            DateCreated = new DateTime(2021, 4, 22, 13, 56, 11, 419, DateTimeKind.Local).AddTicks(5961),
                             Deleted = false,
                             FullName = "Dr Who",
-                            LastUpdated = new DateTime(2021, 4, 22, 14, 2, 32, 886, DateTimeKind.Local).AddTicks(8240),
+                            LastUpdated = new DateTime(2021, 4, 22, 13, 56, 11, 423, DateTimeKind.Local).AddTicks(2185),
                             PlaceId = "12345"
                         });
                 });
